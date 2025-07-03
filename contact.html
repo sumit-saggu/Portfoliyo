@@ -184,10 +184,10 @@
         <div class="navbar">
             <h3>SUMIT KUMAR</h3>
             <ul class="nav-buttons">
-                <li><a href="index.html"><span>Home</span></a></li>
-                <li><a href="about.html"><span>About</span></a></li>
-                <li><a href="projects.html"><span>Projects</span></a></li>
-                <li><a href="contact.html"><span>Contact</span></a></li>
+                <li><a href="{{url_for('home')}}"><span>Home</span></a></li>
+                <li><a href="{{url_for('about')}}"><span>About</span></a></li>
+                <li><a href="{{url_for('projects')}}"><span>Projects</span></a></li>
+                <li><a href="{{url_for('contact')}}"><span>Contact</span></a></li>
             </ul>
         </div>
     </nav>
@@ -196,8 +196,7 @@
         <h1>Contact Me</h1>
         <p>If you want to get in touch, feel free to reach out via LinkedIn, GitHub, or email!</p>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/sumit-kumar-674656306/" target="_blank" class="social-btn linkedin"
-                title="LinkedIn">
+            <a href="https://www.linkedin.com/in/sumit-kumar-674656306/" target="_blank" class="social-btn linkedin" title="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://github.com/sumit-saggu" target="_blank" class="social-btn github" title="GitHub">
@@ -210,7 +209,7 @@
                 <a href="mailto:sumitsaggu2005@gmail.com" style="color:#d2c749;text-decoration:none;">sumitsaggu2005@gmail.com</a>
             </p>
         </div>
-        <form class="contact-form" method="POST" action="/contact" autocomplete="off">
+        <form class="contact-form" autocomplete="off">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
 
