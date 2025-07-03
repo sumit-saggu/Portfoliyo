@@ -1,13 +1,15 @@
-from flask import Flask, render_template, request, flash, redirect, url_for
+from flask import Flask,render_template, request, flash, redirect, url_for
 import smtplib
 from email.message import EmailMessage
 
-app = Flask(__name__, template_folder='.')
+app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Needed for flash messages
 
+
 # Email configuration
-EMAIL_ADDRESS = 'your_email@gmail.com'
-EMAIL_PASSWORD = 'your_app_password'  # Use App Password for Gmail
+EMAIL_ADDRESS = 'sumitsaggu2005@gmail.com'
+EMAIL_PASSWORD = 'Sumit@123'  # Use App Password for Gmail
+
 
 @app.route('/')
 def home():
@@ -44,6 +46,7 @@ def contact():
             flash('Error sending message. Please try again later.', 'danger')
         return redirect(url_for('contact'))
     return render_template('contact.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
