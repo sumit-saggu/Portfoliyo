@@ -13,9 +13,11 @@
             margin: 0;
             padding: 0;
         }
+
         nav {
             padding: 0;
         }
+
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -23,12 +25,14 @@
             padding: 15px 40px;
             background: #000;
         }
+
         .navbar h3 {
             color: white;
             margin: 0;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             letter-spacing: 2px;
         }
+
         .nav-buttons {
             list-style: none;
             margin: 0;
@@ -36,6 +40,7 @@
             display: flex;
             gap: 20px;
         }
+
         .nav-buttons li a {
             color: white;
             background: #000000;
@@ -48,16 +53,19 @@
             text-decoration: none;
             display: inline-block;
         }
+
         .nav-buttons li a:hover {
             background: #000;
             color: #d2c749;
         }
+
         .main-section {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 40px 60px 0 60px;
         }
+
         #content {
             text-align: left;
             padding: 20px;
@@ -67,32 +75,38 @@
             border-radius: 8px;
             margin-left: 200px;
             margin-bottom: 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
         }
+
         #content h1 {
             margin: 0 0 10px 0;
             color: white;
         }
+
         #content p {
             color: white;
         }
+
         #profile-picture {
             text-align: right;
             margin-right: 200px;
         }
+
         #profile-picture img {
             height: 400px;
             width: 300px;
             object-fit: cover;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
+
         .social-links {
             margin-top: 20px;
             display: flex;
             gap: 16px;
             justify-content: center;
         }
+
         .social-btn {
             display: inline-block;
             background: #222;
@@ -106,14 +120,43 @@
             transition: background 0.3s, color 0.3s;
             text-decoration: none;
         }
+
         .social-btn.linkedin:hover {
             background: #0077b5;
             color: #fff;
         }
+
         .social-btn.github:hover {
             background: #333;
             color: #ffd700;
         }
+
+        .contact-btn {
+            display: inline-block;
+            background: #222;
+            color: #fff;
+            border-radius: 22px;
+            /* Pill shape */
+            height: 44px;
+            line-height: 44px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+            text-decoration: none;
+            margin-right: 8px;
+            border: none;
+            cursor: pointer;
+            vertical-align: middle;
+            padding: 0 28px;
+            /* Horizontal padding for pill effect */
+            white-space: nowrap;
+        }
+
+        .contact-btn:hover {
+            background: #d2c749;
+            color: #222;
+        }
+
         footer {
             text-align: center;
             color: #aaa;
@@ -121,12 +164,14 @@
             margin-top: 40px;
             font-size: 16px;
         }
+
         @media (max-width: 900px) {
             .main-section {
                 flex-direction: column;
                 align-items: center;
                 margin: 30px 10px 0 10px;
             }
+
             #profile-picture {
                 margin-right: 0;
                 margin-top: 30px;
@@ -140,7 +185,6 @@
         <div class="navbar">
             <h3>SUMIT KUMAR</h3>
             <ul class="nav-buttons">
-                <li><a href="/"><span>Home</span></a></li>
                 <li><a href="/about"><span>About</span></a></li>
                 <li><a href="/projects"><span>Projects</span></a></li>
                 <li><a href="/contact"><span>Contact</span></a></li>
@@ -154,7 +198,9 @@
             <h1>Sumit Kumar</h1>
             <p>Python Developer</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/sumit-kumar-674656306/" target="_blank" class="social-btn linkedin" title="LinkedIn">
+                <a href="/contact" class="contact-btn" title="Contact Me">Contact Me</a>
+                <a href="https://www.linkedin.com/in/sumit-kumar-674656306/" target="_blank" class="social-btn linkedin"
+                    title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
                 <a href="https://github.com/sumit-saggu" target="_blank" class="social-btn github" title="GitHub">
@@ -167,9 +213,11 @@
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2023 Sumit Kumar</p>
-    </footer>
+
 </body>
+
+<footer>
+    <p>&copy; 2023 Sumit Kumar</p>
+</footer>
 
 </html>
