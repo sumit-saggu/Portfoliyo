@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Sumit Kumar Portfolio</title>
+    <style>
+        body {
+            background: #000000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: #000;
+        }
+        .navbar h3 {
+            color: white;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            letter-spacing: 2px;
+        }
+        .nav-buttons {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-buttons li a {
+            color: white;
+            background: #000000;
+            font-size: 18px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: color 0.3s, background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .nav-buttons li a:hover {
+            background: #222;
+            color: #d2c749;
+        }
+        .projects-section {
+            max-width: 800px;
+            margin: 60px auto 0 auto;
+            background: #222;
+            color: #fff;
+            border-radius: 10px;
+            padding: 40px 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .projects-section h1 {
+            color: #d2c749;
+            margin-bottom: 20px;
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+        }
+        .project-list li {
+            margin-bottom: 25px;
+            background: #181818;
+            border-radius: 6px;
+            padding: 18px 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+        }
+        .project-list a {
+            color: #d2c749;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .project-list a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+        .project-desc {
+            color: #ccc;
+            font-size: 16px;
+            margin-top: 6px;
+        }
+        footer {
+            text-align: center;
+            color: #aaa;
+            padding: 20px 0 10px 0;
+            margin-top: 40px;
+            font-size: 16px;
+        }
+        @media (max-width: 900px) {
+            .projects-section {
+                margin: 30px 10px 0 10px;
+                padding: 25px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <h3>SUMIT KUMAR</h3>
+            <ul class="nav-buttons">
+               <li><a href="{{url_for('home')}}"><span>Home</span></a></li>
+                <li><a href="{{url_for('about')}}"><span>About</span></a></li>
+                <li><a href="{{url_for('projects')}}"><span>Projects</span></a></li>
+                <li><a href="{{url_for('contact')}}"><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="projects-section">
+        <h1>My Projects</h1>
+        <ul class="project-list">
+            <li>
+                <a href="https://github.com/sumit-saggu/dataAnalyzer-in-csv-file" target="_blank">Project 1: Sales Analyzer</a>
+                <div class="project-desc">
+                    A Python Jupyter notebook for analyzing and visualizing product sales data using pandas and matplotlib.
+                </div>
+            </li>
+            <li>
+                <a href="https://github.com/sumit-saggu/News-Headlines" target="_blank">Project 2: News Headlines Scraper</a>
+                <div class="project-desc">
+                    A web scraper that fetches the latest news headlines from The Hindu and saves them to a text file.
+                </div>
+            </li>
+            <li>
+                <a href="https://github.com/sumit-saggu/Inventory-management" target="_blank">Project 3: Inventory Store</a>
+                <div class="project-desc">
+                    A simple inventory management system to track products, stock levels, and sales, built with Python and SQLite.
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Sumit Kumar</p>
+    </footer>
+</body>
+
+</html>
